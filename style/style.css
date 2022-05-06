@@ -6,17 +6,21 @@
     border: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 ul,
 ol,
 li {
     list-style: none;
 }
+
 img {
     vertical-align: top;
 }
+
 h1,
 h2,
 h3,
@@ -26,6 +30,7 @@ h6 {
     font-weight: inherit;
     font-size: inherit;
 }
+
 html,
 body {
     height: 100%;
@@ -34,12 +39,14 @@ body {
     font-size: 12px;
     color: #616161;
 }
+
 .wrapper {
     overflow: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
+
 .main {
     flex: 1 1 auto;
 }
@@ -49,30 +56,66 @@ body {
     margin: 0 auto;
     padding: 0 8px;
 }
+
 @font-face {
     font-family: "Graphik";
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/Graphik-Regular.woff2") format("woff2"), url("../fonts/Graphik-Regular.woff") format("woff");
 }
+
 @font-face {
     font-family: "Graphik";
     font-style: normal;
     font-weight: 500;
     src: url("../fonts/Graphik-Medium.woff2") format("woff2"), url("../fonts/Graphik-Medium.woff") format("woff");
 }
+
 @font-face {
     font-family: "Graphik";
     font-style: normal;
     font-weight: 600;
     src: url("../fonts/Graphik-Semibold.woff2") format("woff2"), url("../fonts/Graphik-Semibold.woff") format("woff");
 }
+
 @font-face {
     font-family: "Graphik";
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/Graphik-Bold.woff2") format("woff2"), url("../fonts/Graphik-Bold.woff") format("woff");
 }
+
 body {
     font-family: "Graphik";
+    font-style: normal;
+    background-color: #F3F4F6;
+}
+
+.header {
+    margin-bottom: 24px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111827;
+    min-height: 72px;
+}
+
+.header__burger {
+    margin-right: 17px;
+}
+
+.header__burger,
+.header__search,
+.header__language {
+    cursor: pointer;
+}
+
+.main__slider-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111827;
 }
